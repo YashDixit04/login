@@ -26,13 +26,13 @@ submit_data.addEventListener("click", ()=>{
     .then(() => {
         forgetEmail="";
 
-        alert("Congratuation");
+        alert("Go to your Gmail for reset your Password");
     })
 
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
 
-        alert("Sorry");
+        alert("User Invalid");
     });
 })
