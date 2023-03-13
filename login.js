@@ -26,12 +26,12 @@ login.addEventListener("click", (e)=>{
   .then((userCredential) => {
   
     const user = userCredential.user;
-    alert("Success");
+    alert("User Log-in!");
     
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert("Error");
+    alert("Invalid User");
   });
 })
